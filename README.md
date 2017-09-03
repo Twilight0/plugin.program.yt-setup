@@ -8,11 +8,21 @@ Youtube Setup addon lets you easily apply your created keys inside Kodi and main
 
 How to use it:
 ---------------------
-You can either load a file locally stored or use a service like  [pastebin.com](http://www.pastebin.com/)
+First, get your own keys by reading [this post](https://forum.kodi.tv/showthread.php?tid=267160&pid=2299960#pid2299960).
 
-See file.txt `and` file.xml in examples directory, you can either use one or the other format.
+Then create a text file to load it locally or use a service like [pastebin.com](http://www.pastebin.com/)
+
+See file.txt `and` file.xml in examples directory, you can use either of the two formats, whichever looks more logical.
 
 Please leave `<enablement>true</enablement>` in xml format and `true` in txt format for detection purposes.
+
+file.txt looks like this:
+
+![](http://i.imgur.com/AFwxvDQ.jpg)
+
+file.xml has the info in xml tags already, so pretty self explanatory:
+
+![](http://i.imgur.com/PiY3ZyO.jpg)
 
 License
 -------
