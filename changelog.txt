@@ -1,3 +1,6 @@
+[B]+ 1.1.1[/B] ~ (26-09-2017)
+- Minor fix for plain txt files detection
+
 [B]+ 1.1.0[/B] ~ (25-09-2017)
 - Added support for Ubuntu's pastebin
 - Added optional route call method for post-5.4.3 versions of youtube addon
