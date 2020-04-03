@@ -15,8 +15,11 @@
         along with this program.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
-import control, client
-import re
+from tulip import control, client
+import re, json
+
+
+YT_VERSION = control.infoLabel('System.AddonVersion(plugin.video.youtube)').partition('~')[0].replace('.', '')
 
 
 def local(path):
@@ -33,6 +36,20 @@ def local(path):
         keys = f.splitlines()
     elif path.endswith('.xml') or f.startswith('<?xml'):
         keys = [client.parseDOM(f, 'id')[0], client.parseDOM(f, 'api_key')[0], client.parseDOM(f, 'secret')[0]]
+    elif path.endswith('.json'):
+        payload = json.loads(f)
+        if 'installed' in payload:
+            payload = payload['installed']
+            if 'api_key' not in payload:
+                control.okDialog(heading='Youtube Setup', line1=control.lang(30023))
+                api_key = control.inputDialog()
+                if not api_key:
+                    return
+            else:
+                api_key = payload['api_key']
+            keys = [payload['client_id'], api_key, payload['client_secret']]
+        else:
+            keys = None
     else:
         keys = None
 
@@ -41,7 +58,7 @@ def local(path):
 
 def remote(url):
 
-    if 'pastebin' in url and not 'raw' in url:
+    if ('pastebin' in url or 'hastebin' in url) and not 'raw' in url:
         address = re.sub(r'(^.+?\.com/)(\w+)', r'\1raw/\2', url)
     elif 'debian' in url and not 'plain' in url:
         address = re.sub(r'(^.+?\.net/)(\w+)', r'\1plain/\2',url)
@@ -64,38 +81,49 @@ def remote(url):
         keys = text.splitlines()
     elif text.startswith('<?xml'):
         keys = [client.parseDOM(text, 'id')[0], client.parseDOM(text, 'api_key')[0], client.parseDOM(text, 'secret')[0]]
+    elif address.endswith('.json') or 'installed' in text:
+        payload = json.loads(text)
+        if 'installed' in payload:
+            payload = payload['installed']
+            if 'api_key' not in payload:
+                control.okDialog(heading='Youtube Setup', line1=control.lang(30023))
+                api_key = control.inputDialog()
+                if not api_key:
+                    return
+            else:
+                api_key = payload['api_key']
+            keys = [payload['client_id'], api_key, payload['client_secret']]
+        else:
+            keys = None
     else:
         keys = None
 
     return keys
 
 
-def setup(_list_):
+def setup(credentials):
 
     def call():
 
         plugin_call = 'plugin://plugin.video.youtube/api/update/?enable=true'
-        route = '{0}&client_id={1}&client_secret={2}&api_key={3}'.format(plugin_call, _list_[0], _list_[2], _list_[1])
+        route = '{0}&client_id={1}&client_secret={2}&api_key={3}'.format(plugin_call, credentials[0], credentials[2], credentials[1])
         control.execute('RunPlugin({0})'.format(route))
 
-    yt_version_info = control.infoLabel('System.AddonVersion(plugin.video.youtube)').partition('~')[0].replace('.', '')
-
-    if int(yt_version_info) >= 550 and control.setting('route543') == 'true':
+    if int(YT_VERSION) >= 550 and control.setting('route543') == 'true':
 
         call()
 
-    elif int(yt_version_info) >= 543 and control.setting('route543') == 'true' and 'English' in control.infoLabel(
-            'System.Language'
-    ):
+    elif int(YT_VERSION) >= 543 and control.setting('route543') == 'true' and 'English' in control.infoLabel('System.Language'):
 
         call()
 
     else:
 
-        control.addon('plugin.video.youtube').setSetting('youtube.api.enable', 'true')
-        control.addon('plugin.video.youtube').setSetting('youtube.api.id', _list_[0])
-        control.addon('plugin.video.youtube').setSetting('youtube.api.key', _list_[1])
-        control.addon('plugin.video.youtube').setSetting('youtube.api.secret', _list_[2])
+        if int(YT_VERSION) < 670:
+            control.addon('plugin.video.youtube').setSetting('youtube.api.enable', 'true')
+        control.addon('plugin.video.youtube').setSetting('youtube.api.id', credentials[0])
+        control.addon('plugin.video.youtube').setSetting('youtube.api.key', credentials[1])
+        control.addon('plugin.video.youtube').setSetting('youtube.api.secret', credentials[2])
 
         control.infoDialog(message=control.lang(30015), time=3000)
 
@@ -109,11 +137,13 @@ def wizard():
 def seq():
 
     conditions = [
-        control.addon('plugin.video.youtube').getSetting('youtube.api.enable') == 'true',
         bool(control.addon('plugin.video.youtube').getSetting('youtube.api.id')),
         bool(control.addon('plugin.video.youtube').getSetting('youtube.api.key')),
         bool(control.addon('plugin.video.youtube').getSetting('youtube.api.secret'))
     ]
+    
+    if int(YT_VERSION) >= 670:
+        conditions.insert(0, control.addon('plugin.video.youtube').getSetting('youtube.api.enable') == 'true')
 
     if any(conditions) and bool(control.setting('local')) or bool(control.setting('remote')):
         control.okDialog(control.addonInfo('name'), control.lang(30017))

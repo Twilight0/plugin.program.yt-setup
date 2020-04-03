@@ -101,3 +101,7 @@ msgstr "Εκτέλεση του ρυθμιστή youtube μετά απο επι�
 msgctxt "#30022"
 msgid "Use plugin route method for setup on Youtube versions 5.4.3 and later"
 msgstr "Χρήση εγγενούς μεθόδου για την ρύθμιση σε εκδόσεις 5.4.3 και μετέπειτα του Youtube"
+
+msgctxt "#30023"
+msgid "API key was not found in the client.json file, please enter it manually"
+msgstr "Το κλειδι API δεν βρέθηκε στο αρχείο client.json παρακαλώ εισάγετέ το χειροκίνητα"

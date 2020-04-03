@@ -101,3 +101,7 @@ msgstr ""
 msgctxt "#30022"
 msgid "Use plugin route method for setup on Youtube versions 5.4.3 and later"
 msgstr ""
+
+msgctxt "#30023"
+msgid "API key was not found in the client.json file, please enter it manually"
+msgstr ""
