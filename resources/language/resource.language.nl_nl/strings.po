@@ -1,0 +1,107 @@
+# Addon Name: Youtube Setup
+# Addon id: plugin.program.yt-setup
+# Addon Provider: Twilight0
+msgid ""
+msgstr ""
+"Project-Id-Version: Youtube Setup\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-06-22 11:29+0000\n"
+"Last-Translator: dagwieers\n"
+"Language-Team: Dutch\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30001"
+msgid "Please run addon from its icon, do not import it"
+msgstr "Start deze addon via het ikoon, importeer ze niet."
+
+msgctxt "#30002"
+msgid "Paths"
+msgstr "Paden"
+
+msgctxt "#30003"
+msgid "Local/Remote path, keys file selector"
+msgstr "Lokaal/remote pad, sleutel bestand kiezer"
+
+msgctxt "#30004"
+msgid "Local"
+msgstr "Lokaal"
+
+msgctxt "#30005"
+msgid "Remote"
+msgstr "Remote"
+
+msgctxt "#30006"
+msgid "Local Path (include Local Network)"
+msgstr "Lokaal pad (omvat ook Lokaal Netwerk)"
+
+msgctxt "#30007"
+msgid "Remote Path (Internet address)"
+msgstr "Remote pad (Internet adres)"
+
+msgctxt "#30008"
+msgid "Path or Address haven't been set"
+msgstr "Pad of adres werd niet ingevuld"
+
+msgctxt "#30009"
+msgid "Open settings window?"
+msgstr "Open instellingen?"
+
+msgctxt "#30010"
+msgid "Something's wrong!"
+msgstr "Er is iets mis!"
+
+msgctxt "#30011"
+msgid "Incorrect settings or files detected"
+msgstr "Verkeerde instelingen of bestanden gevonden"
+
+msgctxt "#30012"
+msgid "Youtube Setup addon is now ready to store your keys"
+msgstr "YouTube Setup add-on is nu klaar om je keys op te slaan"
+
+msgctxt "#30013"
+msgid "Proceed"
+msgstr "Ga verder"
+
+msgctxt "#30014"
+msgid "Cancel"
+msgstr "Annuleer"
+
+msgctxt "#30015"
+msgid "Success!"
+msgstr "Succes!"
+
+msgctxt "#30016"
+msgid "Open settings window"
+msgstr "Open instellingen"
+
+msgctxt "#30017"
+msgid "Current settings will be overwritten!"
+msgstr "Huidige instellingen worden overschreven!"
+
+msgctxt "#30018"
+msgid "[COLOR white]Please re-run addon after applying the settings[/COLOR]"
+msgstr "[COLOR=white]Gelieve de add-on opnieuw te starten om de instelingen toe te passen[/COLOR]"
+
+msgctxt "#30019"
+msgid "Open Youtube settings window"
+msgstr "Open YouTube instellingen"
+
+msgctxt "#30020"
+msgid "Execute setup"
+msgstr "Start setup"
+
+msgctxt "#30021"
+msgid "Run youtube's setup wizard after successful key application"
+msgstr "Start YouTube's setup hulp na het succesvol toevoegen van een sleutel"
+
+msgctxt "#30022"
+msgid "Use plugin route method for setup on Youtube versions 5.4.3 and later"
+msgstr "Gebruik de plugin route methode voor setup van YouTube versie 5.4.3 of nieuwer"
+
+msgctxt "#30023"
+msgid "API key was not found in the client.json file, please enter it manually"
+msgstr "API sleutel werd niet gevonden in het client.json bestand, gelieve hem zelf toe te voegen"
