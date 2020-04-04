@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.yt-setup" name="Youtube Setup" version="2.0.0~beta1" provider-name="Twilight0">
+<addon id="plugin.program.yt-setup" name="Youtube Setup" version="2.0.0~beta2" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="plugin.video.youtube" version="5.4.0"/>
+        <import addon="script.module.tulip" version="2.5.10"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>executable</provides>
@@ -18,7 +19,7 @@
         <license>GNU GPL, version 2</license>
         <website>https://twitter.com/TwilightZer0</website>
         <source>https://github.com/Twilight0/plugin.program.yt-setup</source>
-        <news>[B]+ 2.0.0[/B] ~ (03-04-2020)
+        <news>[B]+ 2.0.0[/B] ~ (04-04-2020)
 - Proper Python 3 support
 - Added support for hastebin.com
 - Removed "youtube.api.enable" setting for post 6.7.0 youtube addon versions
