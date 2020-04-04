@@ -15,6 +15,9 @@
         <summary lang="el_GR">Βοηθητικό πρόσθετο ρύθμισης Youtube</summary>
         <description lang="el_GR">Το πρόσθετο αυτό θα σας βοηθήσει να ρυθμίσετε τα κλειδιά API του Youtube.</description>
         <disclaimer lang="el_GR">Το παρόν πρόσθετο παρέχεται "όπως είναι". Παρακαλώ διαβάστε το αρχείο LICENCE για περισσότερες λεπτομέρειες.</disclaimer>
+        <summary lang="ru_RU">Программное дополнение Youtube Setup</summary>
+        <description lang="ru_RU">Это дополнение поможет вам установить api-ключи для Youtube.</description>
+        <disclaimer lang="ru_RU">Это дополнение поставляется "как есть". Пожалуйста, ознакомьтесь с лицензией для дополнительной информации.</disclaimer>
         <license>GNU GPL, version 2</license>
         <website>https://twitter.com/TwilightZer0</website>
         <source>https://github.com/Twilight0/plugin.program.yt-setup</source>
