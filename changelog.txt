@@ -1,6 +1,7 @@
 [B]+ 2.0.0[/B] ~ (06-04-2020)
 - Proper Python 3 support
 - Added support for hastebin.com
+- Simplified setup function
 - Removed "youtube.api.enable" setting for post 6.7.0 youtube addon versions
 - Added support for google's client.json file from the credentials screen
   > If api_key is not found in the json file, youtube setup will ask to be entered manually
@@ -9,6 +10,7 @@
   > Romanian: thanks to tmihai20
   > Dutch: thanks to dagwieers
   > Russian: thanks to vlmaksime
+- Bug fixes
 
 [B]+ 1.1.1[/B] ~ (26-09-2017)
 - Minor fix for plain txt files detection

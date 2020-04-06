@@ -15,7 +15,9 @@
         along with this program.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
+from __future__ import print_function
 from tulip import control, client
+from tulip.compat import quote
 import re, json
 
 
@@ -32,7 +34,7 @@ def local(path):
 
     f = f.strip('\r\n')
 
-    if path.endswith('.txt') or len(f.splitlines()) >= 3:
+    if path.endswith('.txt') or len(f.splitlines()) in (3, 4):
         keys = f.splitlines()
     elif path.endswith('.xml') or f.startswith('<?xml'):
         keys = [client.parseDOM(f, 'id')[0], client.parseDOM(f, 'api_key')[0], client.parseDOM(f, 'secret')[0]]
@@ -77,7 +79,7 @@ def remote(url):
 
     text = text.strip('\r\n')
 
-    if len(text.splitlines()) >= 3:
+    if len(text.splitlines()) in (3, 4):
         keys = text.splitlines()
     elif text.startswith('<?xml'):
         keys = [client.parseDOM(text, 'id')[0], client.parseDOM(text, 'api_key')[0], client.parseDOM(text, 'secret')[0]]
@@ -106,14 +108,12 @@ def setup(credentials):
     def call():
 
         plugin_call = 'plugin://plugin.video.youtube/api/update/?enable=true'
-        route = '{0}&client_id={1}&client_secret={2}&api_key={3}'.format(plugin_call, credentials[0], credentials[2], credentials[1])
+        route = '{0}&client_id={1}&client_secret={2}&api_key={3}'.format(
+            plugin_call, quote(credentials[0]), quote(credentials[2]), quote(credentials[1])
+        )
         control.execute('RunPlugin({0})'.format(route))
 
-    if int(YT_VERSION) >= 550 and control.setting('route543') == 'true':
-
-        call()
-
-    elif int(YT_VERSION) >= 543 and control.setting('route543') == 'true' and 'English' in control.infoLabel('System.Language'):
+    if int(YT_VERSION) >= 543 and control.setting('route543') == 'true':
 
         call()
 
@@ -141,14 +141,14 @@ def seq():
         bool(control.addon('plugin.video.youtube').getSetting('youtube.api.key')),
         bool(control.addon('plugin.video.youtube').getSetting('youtube.api.secret'))
     ]
-    
-    if int(YT_VERSION) >= 670:
+
+    if int(YT_VERSION) <= 670:
         conditions.insert(0, control.addon('plugin.video.youtube').getSetting('youtube.api.enable') == 'true')
 
-    if any(conditions) and bool(control.setting('local')) or bool(control.setting('remote')):
+    if any(conditions) and (control.setting('local') or control.setting('remote')):
         control.okDialog(control.addonInfo('name'), control.lang(30017))
 
-    if not bool(control.setting('local')) and not bool(control.setting('remote')):
+    if not control.setting('local') and not control.setting('remote'):
 
         result = None
 
@@ -175,8 +175,6 @@ def seq():
 
             if control.setting('wizard') == 'true':
                 wizard()
-            else:
-                pass
 
         else:
 
@@ -185,7 +183,7 @@ def seq():
 
 def start():
 
-    if not bool(control.setting('local')) and not bool(control.setting('remote')):
+    if not control.setting('local') and not control.setting('remote'):
 
         if control.yesnoDialog(heading=control.lang(30008), line1=control.lang(30009)):
             control.openSettings()
@@ -209,10 +207,6 @@ def start():
         elif selection == 2:
 
             control.openSettings(id='plugin.video.youtube')
-
-        else:
-
-            pass
 
 
 if __name__ == '__main__':
