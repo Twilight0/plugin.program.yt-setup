@@ -80,7 +80,7 @@ msgstr "Abrir ventana de configuración"
 
 msgctxt "#30017"
 msgid "Current settings will be overwritten!"
-msgstr "¡La configuración actual se sobreescribirá!"
+msgstr "¡La configuración actual se sobrescribirá!"
 
 msgctxt "#30018"
 msgid "[COLOR white]Please re-run addon after applying the settings[/COLOR]"
@@ -104,4 +104,4 @@ msgstr "Utilizar método de ruta del complemento para la configuración en versi
 
 msgctxt "#30023"
 msgid "API key was not found in the client.json file, please enter it manually"
-msgstr "La clave API no fue encontrada en el archivo client.json, por favor ingréselo manualente"
+msgstr "La clave API no fue encontrada en el archivo client.json. Por favor, introdúzcala manualente"
