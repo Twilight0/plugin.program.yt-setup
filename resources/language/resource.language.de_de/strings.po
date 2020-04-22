@@ -1,0 +1,107 @@
+# Addon Name: Youtube Setup
+# Addon id: plugin.program.yt-setup
+# Addon Provider: Twilight0
+msgid ""
+msgstr ""
+"Project-Id-Version: Youtube Setup\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-06-22 11:29+0000\n"
+"Last-Translator: horstle\n"
+"Language-Team: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30001"
+msgid "Please run addon from its icon, do not import it"
+msgstr "Bitte Addon über Icon ausführen, nicht importieren"
+
+msgctxt "#30002"
+msgid "Paths"
+msgstr "Pfade"
+
+msgctxt "#30003"
+msgid "Local/Remote path, keys file selector"
+msgstr "Lokaler/Entfernter Pfad, Schlüsseldatei-Wähler"
+
+msgctxt "#30004"
+msgid "Local"
+msgstr "Lokal"
+
+msgctxt "#30005"
+msgid "Remote"
+msgstr "Entfernt"
+
+msgctxt "#30006"
+msgid "Local Path (include Local Network)"
+msgstr "Lokaler Pfad (inklusive lokalem Netzwerk)"
+
+msgctxt "#30007"
+msgid "Remote Path (Internet address)"
+msgstr "Entfernter Pfad (Internet Adresse)"
+
+msgctxt "#30008"
+msgid "Path or Address haven't been set"
+msgstr "Pfad oder Adresse wurde nicht gesetzt"
+
+msgctxt "#30009"
+msgid "Open settings window?"
+msgstr "Einstellungsfenster öffnen?"
+
+msgctxt "#30010"
+msgid "Something's wrong!"
+msgstr "Etwas stimmt nicht!"
+
+msgctxt "#30011"
+msgid "Incorrect settings or files detected"
+msgstr "Inkorrekte Einstellungen oder Dateien erkannt"
+
+msgctxt "#30012"
+msgid "Youtube Setup addon is now ready to store your keys"
+msgstr "Youtube Setup Addon ist nun bereit, Schlüssel zu speichern"
+
+msgctxt "#30013"
+msgid "Proceed"
+msgstr "Fortfahren"
+
+msgctxt "#30014"
+msgid "Cancel"
+msgstr "Abbrechen"
+
+msgctxt "#30015"
+msgid "Success!"
+msgstr "Erfolg!"
+
+msgctxt "#30016"
+msgid "Open settings window"
+msgstr "Einstellungsfenster öffnen"
+
+msgctxt "#30017"
+msgid "Current settings will be overwritten!"
+msgstr "Aktuelle Einstellungen werden überschrieben!"
+
+msgctxt "#30018"
+msgid "[COLOR white]Please re-run addon after applying the settings[/COLOR]"
+msgstr "[COLOR white]Bitte das Addon nach dem Speichern der Einstellungen nochmal ausführen[/COLOR]"
+
+msgctxt "#30019"
+msgid "Open Youtube settings window"
+msgstr "Öffne das Youtube Einstellungsfenster"
+
+msgctxt "#30020"
+msgid "Execute setup"
+msgstr "Setup ausführen"
+
+msgctxt "#30021"
+msgid "Run youtube's setup wizard after successful key application"
+msgstr "Nach erfolgreicher Schlüsselanwendung Youtube's Setup-Assistent ausführen"
+
+msgctxt "#30022"
+msgid "Use plugin route method for setup on Youtube versions 5.4.3 and later"
+msgstr "Nutze Plugin-Routen Methode für das Setup von Youtube Version 5.4.3 oder neuer"
+
+msgctxt "#30023"
+msgid "API key was not found in the client.json file, please enter it manually"
+msgstr "API Schlüssel wurde nicht in der client.json Datei gefunden, bitte manuell eingeben"
