@@ -1,0 +1,107 @@
+# Addon Name: Youtube Setup
+# Addon id: plugin.program.yt-setup
+# Addon Provider: Twilight0
+msgid ""
+msgstr ""
+"Project-Id-Version: Youtube Setup\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-05-04 11:29+0000\n"
+"Last-Translator: tahirdon\n"
+"Language-Team: Hindi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hi\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30001"
+msgid "Please run addon from its icon, do not import it"
+msgstr "कृपया आइकन से ही एडऑन चलाएं, आयात न करें"
+
+msgctxt "#30002"
+msgid "Paths"
+msgstr "पथ"
+
+msgctxt "#30003"
+msgid "Local/Remote path, keys file selector"
+msgstr "लोकल/रिमोट पथ,चाभी फ़ाइल चयनकर्ता"
+
+msgctxt "#30004"
+msgid "Local"
+msgstr "लोकल"
+
+msgctxt "#30005"
+msgid "Remote"
+msgstr "रिमोट"
+
+msgctxt "#30006"
+msgid "Local Path (include Local Network)"
+msgstr "लोकल पथ (लोकल नेटवर्क शामिल करें)"
+
+msgctxt "#30007"
+msgid "Remote Path (Internet address)"
+msgstr "रिमोट पथ (इन्टरनेट पता)"
+
+msgctxt "#30008"
+msgid "Path or Address haven't been set"
+msgstr "पथ या इन्टरनेट पता सेट नहीं किया गया "
+
+msgctxt "#30009"
+msgid "Open settings window?"
+msgstr "खोले सेटिंग्स विंडो?"
+
+msgctxt "#30010"
+msgid "Something's wrong!"
+msgstr "कुछ तो गलत!"
+
+msgctxt "#30011"
+msgid "Incorrect settings or files detected"
+msgstr "गलत सेटिंग्स या फ़ाइलों का पता चला"
+
+msgctxt "#30012"
+msgid "Youtube Setup addon is now ready to store your keys"
+msgstr "यूट्यूब सेटअप एडऑन अब आपकी कुंजियों को संग्रहीत करने के लिए तैयार है"
+
+msgctxt "#30013"
+msgid "Proceed"
+msgstr "आगे बढे"
+
+msgctxt "#30014"
+msgid "Cancel"
+msgstr "रद्द करे"
+
+msgctxt "#30015"
+msgid "Success!"
+msgstr "सफल!"
+
+msgctxt "#30016"
+msgid "Open settings window"
+msgstr "खोले सेटिंग्स विंडो"
+
+msgctxt "#30017"
+msgid "Current settings will be overwritten!"
+msgstr "वर्तमान सेटिंग्स अधिलेखित कर दी जायेगी"
+
+msgctxt "#30018"
+msgid "[COLOR white]Please re-run addon after applying the settings[/COLOR]"
+msgstr "[COLOR white]सेटिंग्स को लागू करने के बाद कृपया फिर से एडऑन चलाएं [/COLOR]"
+
+msgctxt "#30019"
+msgid "Open Youtube settings window"
+msgstr "खोले यूट्यूब सेटिंग्स विंडो"
+
+msgctxt "#30020"
+msgid "Execute setup"
+msgstr "चलाये सेटअप"
+
+msgctxt "#30021"
+msgid "Run youtube's setup wizard after successful key application"
+msgstr "सफल कुंजी अनुप्रयोग के बाद यूट्यूब का सेटअप विज़ार्ड चलाएं"
+
+msgctxt "#30022"
+msgid "Use plugin route method for setup on Youtube versions 5.4.3 and later"
+msgstr "यूट्यूब संस्करण 5.4.3 और बाद में सेटअप के लिए प्लगइन मार्ग विधि का उपयोग करें"
+
+msgctxt "#30023"
+msgid "API key was not found in the client.json file, please enter it manually"
+msgstr "एपीआई चाभी नही मिली client.json फ़ाइल में, मैन्युअल रूप से भरें "
