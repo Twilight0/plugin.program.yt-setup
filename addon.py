@@ -166,10 +166,7 @@ def seq():
 
     else:
 
-        if control.yesnoDialog(
-                line1=control.lang(30012), line2='', line3='',
-                yeslabel=control.lang(30013), nolabel=control.lang(30014)
-        ):
+        if control.yesnoDialog(line1=control.lang(30012), yeslabel=control.lang(30013), nolabel=control.lang(30014)):
 
             setup(result)
 
