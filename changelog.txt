@@ -1,3 +1,7 @@
+[B]+ 2.1.0[/B] ~ (07-08-2020)
+- Add support for past.osmc.tv
+- Clean up
+
 [B]+ 2.0.1[/B] ~ (22-04-2020)
 - Added the following translations:
   > German: thanks to horstle

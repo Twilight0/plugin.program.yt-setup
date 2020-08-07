@@ -60,8 +60,8 @@ def local(path):
 
 def remote(url):
 
-    if ('pastebin' in url or 'hastebin' in url) and not 'raw' in url:
-        address = re.sub(r'(^.+?\.com/)(\w+)', r'\1raw/\2', url)
+    if ('pastebin' in url or 'hastebin' in url or 'osmc.tv' in url) and not 'raw' in url:
+        address = re.sub(r'(^.+?\.(?:com|tv)/)(\w+)', r'\1raw/\2', url)
     elif 'debian' in url and not 'plain' in url:
         address = re.sub(r'(^.+?\.net/)(\w+)', r'\1plain/\2',url)
     else:
@@ -142,7 +142,7 @@ def seq():
         bool(control.addon('plugin.video.youtube').getSetting('youtube.api.secret'))
     ]
 
-    if int(YT_VERSION) <= 670:
+    if int(YT_VERSION) < 670:
         conditions.insert(0, control.addon('plugin.video.youtube').getSetting('youtube.api.enable') == 'true')
 
     if any(conditions) and (control.setting('local') or control.setting('remote')):
