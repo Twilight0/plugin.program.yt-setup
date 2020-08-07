@@ -1,0 +1,107 @@
+# Addon Name: Youtube Setup
+# Addon id: plugin.program.yt-setup
+# Addon Provider: Twilight0
+msgid ""
+msgstr ""
+"Project-Id-Version: Youtube Setup\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-06-22 11:29+0000\n"
+"Last-Translator: Sopor\n"
+"Language-Team: Swedish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sv\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30001"
+msgid "Please run addon from its icon, do not import it"
+msgstr "Kör tillägget från dess ikon, importera inte det"
+
+msgctxt "#30002"
+msgid "Paths"
+msgstr "Sökvägar"
+
+msgctxt "#30003"
+msgid "Local/Remote path, keys file selector"
+msgstr "Lokal/Fjärrsökväg, nyckelfilsväljare"
+
+msgctxt "#30004"
+msgid "Local"
+msgstr "Lokalt"
+
+msgctxt "#30005"
+msgid "Remote"
+msgstr "Fjärr"
+
+msgctxt "#30006"
+msgid "Local Path (include Local Network)"
+msgstr "Lokal sökväg inkludera lokalt nätverk"
+
+msgctxt "#30007"
+msgid "Fjärrsökväg (Internetadress)"
+msgstr ""
+
+msgctxt "#30008"
+msgid "Path or Address haven't been set"
+msgstr "Sökväg eller adress har inte angivits"
+
+msgctxt "#30009"
+msgid "Open settings window?"
+msgstr "Öppna inställningsfönster!"
+
+msgctxt "#30010"
+msgid "Something's wrong!"
+msgstr "Något är fel!"
+
+msgctxt "#30011"
+msgid "Incorrect settings or files detected"
+msgstr "Upptäckte felaktiga inställningar eller filer"
+
+msgctxt "#30012"
+msgid "Youtube Setup addon is now ready to store your keys"
+msgstr "Youtube-konfigurationen är nu redo att lagra din nyckel"
+
+msgctxt "#30013"
+msgid "Proceed"
+msgstr "Fortsätt"
+
+msgctxt "#30014"
+msgid "Cancel"
+msgstr "Avbryt"
+
+msgctxt "#30015"
+msgid "Success!"
+msgstr "Lyckades!"
+
+msgctxt "#30016"
+msgid "Open settings window"
+msgstr "Öppna inställningsfönstret"
+
+msgctxt "#30017"
+msgid "Current settings will be overwritten!"
+msgstr "Nuvarande inställningar kommer att skrivas över!"
+
+msgctxt "#30018"
+msgid "[COLOR white]Please re-run addon after applying the settings[/COLOR]"
+msgstr "[COLOR white]Kör tillägget igen efter att du har verkställt inställningarna[/COLOR]"
+
+msgctxt "#30019"
+msgid "Open Youtube settings window"
+msgstr "Öppna Youtube:s inställningsfönster"
+
+msgctxt "#30020"
+msgid "Execute setup"
+msgstr "Kör konfigurationen"
+
+msgctxt "#30021"
+msgid "Run youtube's setup wizard after successful key application"
+msgstr "Kör Youtube's konfigurationsguide efter lyckad nyckeltilldelning"
+
+msgctxt "#30022"
+msgid "Use plugin route method for setup on Youtube versions 5.4.3 and later"
+msgstr "Använd tilläggsruttmetod för konfiguration på Youtube version 5.4.3 och senare"
+
+msgctxt "#30023"
+msgid "API key was not found in the client.json file, please enter it manually"
+msgstr "API-nyckeln hittades inte i client.json, ange den manuellt"
